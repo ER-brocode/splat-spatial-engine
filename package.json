@@ -1,0 +1,40 @@
+{
+  "name": "splat-spatial-engine",
+  "version": "1.0.0",
+  "description": "Production-grade WebGL/WebGPU 3D Spatial Audio & Volumetric Gaussian Splatting Engine in Three.js and TypeScript",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test dist/tests/plyParser.test.js dist/tests/spatialAudio.test.js",
+    "lint": "tsc --noEmit",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "gaussian-splatting",
+    "3d-radiance-fields",
+    "spatial-audio",
+    "hrtf",
+    "webgpu",
+    "webgl",
+    "threejs",
+    "typescript",
+    "volumetric-rendering",
+    "radix-sort"
+  ],
+  "author": "koushik4475 <koushik4475@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/three": "^0.169.0",
+    "@webgpu/types": "^0.1.44",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8"
+  }
+}
